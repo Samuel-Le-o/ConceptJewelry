@@ -15,8 +15,8 @@ export default function Navbar() {
         </button>
 
         <div class="hidden md:flex items-center gap-8">
-          <Link to="/shop" class="hover:text-luxury-gold transition-colors duration-300">The Atelier</Link>
-          <Link to="/about" class="hover:text-luxury-gold transition-colors duration-300">Our Story</Link>
+          <Link to="/shop" class="hover:text-luxury-gold transition-colors duration-300">Shop</Link>
+          <Link to="/about" class="hover:text-luxury-gold transition-colors duration-300">About Us</Link>
           <Link to="/contact" class="hover:text-luxury-gold transition-colors duration-300">Contact</Link>
         </div>
 
@@ -35,8 +35,8 @@ export default function Navbar() {
 
       {mobileOpen && (
         <div class="md:hidden bg-luxury-coal border-b border-neutral-800 flex flex-col px-6 py-6 gap-4">
-          <Link to="/shop" onClick={() => setMobileOpen(false)} class="py-2 hover:text-luxury-gold">The Atelier</Link>
-          <Link to="/about" onClick={() => setMobileOpen(false)} class="py-2 hover:text-luxury-gold">Our Story</Link>
+          <Link to="/shop" onClick={() => setMobileOpen(false)} class="py-2 hover:text-luxury-gold">Shop</Link>
+          <Link to="/about" onClick={() => setMobileOpen(false)} class="py-2 hover:text-luxury-gold">About Us</Link>
           <Link to="/contact" onClick={() => setMobileOpen(false)} class="py-2 hover:text-luxury-gold">Contact</Link>
         </div>
       )}

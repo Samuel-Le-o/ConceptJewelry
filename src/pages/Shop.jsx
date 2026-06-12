@@ -28,7 +28,7 @@ export default function Shop() {
   return (
     <div class="max-w-7xl mx-auto px-6 py-12 space-y-10">
       <div class="text-center space-y-2">
-        <h1 class="font-serif text-3xl tracking-[0.15em] uppercase font-semibold">The Atelier Collection</h1>
+        <h1 class="font-serif text-3xl tracking-[0.15em] uppercase font-semibold">The Shop Collection</h1>
         <p class="font-serif text-sm italic text-neutral-400">Discover handpicked, flawless execution signatures.</p>
       </div>
 
@@ -53,7 +53,7 @@ export default function Shop() {
               onClick={() => addToCart(product)}
               class="w-full mt-4 bg-luxury-onyx text-white py-3 text-[10px] uppercase tracking-[0.2em] hover:bg-luxury-gold hover:text-luxury-onyx transition-all duration-300 font-medium"
             >
-              Acquire To Vault
+              Add To Cart
             </button>
           </div>
         ))}

@@ -8,8 +8,8 @@ export default function Footer() {
           © 2026 NEEMA COLLECTIONS.
         </div>
         <div class="flex gap-8 uppercase text-[10px]">
-          <span class="hover:text-white cursor-pointer transition-colors">Privacy Paradigm</span>
-          <span class="hover:text-white cursor-pointer transition-colors">Terms of Atelier</span>
+          <span class="hover:text-white cursor-pointer transition-colors">Privacy Policy</span>
+          <span class="hover:text-white cursor-pointer transition-colors">Terms of Service</span>
           <span class="hover:text-white cursor-pointer transition-colors">Insured Shipping</span>
         </div>
       </div>
