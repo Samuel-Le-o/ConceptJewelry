@@ -9,7 +9,7 @@ export default function Footer() {
         </div>
         <div class="flex gap-8 uppercase text-[10px]">
           <span class="hover:text-white cursor-pointer transition-colors">Privacy Paradigm</span>
-          <span class="hover:text-white cursor-pointer transition-colors">Terms of Shop</span>
+          <span class="hover:text-white cursor-pointer transition-colors">Terms of Atelier</span>
           <span class="hover:text-white cursor-pointer transition-colors">Insured Shipping</span>
         </div>
       </div>

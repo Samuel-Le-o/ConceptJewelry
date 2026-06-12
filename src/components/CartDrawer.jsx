@@ -15,7 +15,7 @@ export default function CartDrawer() {
       <div class="absolute inset-y-0 right-0 max-w-full flex pl-10">
         <div class="w-screen max-w-md bg-luxury-alabaster text-luxury-onyx flex flex-col border-l border-neutral-200 shadow-2xl">
           <div class="p-6 border-b border-neutral-200 flex justify-between items-center bg-luxury-onyx text-white">
-            <h2 class="font-serif text-lg tracking-widest uppercase">Your Selection Cart</h2>
+            <h2 class="font-serif text-lg tracking-widest uppercase">Your Selection Vault</h2>
             <button onClick={() => setIsCartOpen(false)} class="hover:text-luxury-gold transition-colors">
               <X size={20} />
             </button>
@@ -24,7 +24,7 @@ export default function CartDrawer() {
           <div class="flex-grow overflow-y-auto p-6 space-y-6">
             {cart.length === 0 ? (
               <div class="text-center py-20 text-neutral-400">
-                <p class="font-serif italic mb-4">The Cart is currently empty.</p>
+                <p class="font-serif italic mb-4">The vault is currently empty.</p>
                 <button onClick={() => { setIsCartOpen(false); navigate('/shop'); }} class="text-xs uppercase border-b border-luxury-onyx tracking-widest pb-1 hover:text-luxury-gold hover:border-luxury-gold transition-all">Explore Creations</button>
               </div>
             ) : (
