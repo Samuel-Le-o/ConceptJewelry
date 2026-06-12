@@ -1,44 +1,41 @@
 @import "tailwindcss";
 
 @theme {
-  --color-avant-dark: #0A0A0C;
-  --color-avant-surface: #121216;
-  --color-avant-card: #18181F;
-  --color-avant-gold: #FFD700;
-  --color-avant-neon: #E6C687;
-  --color-avant-muted: #8E8E9F;
+  --color-luxury-gold: #D4AF37;
+  --color-luxury-gold-dark: #AA7C11;
+  --color-luxury-onyx: #111111;
+  --color-luxury-coal: #1A1A1A;
+  --color-luxury-alabaster: #FAFAFA;
+  --color-luxury-cream: #F4F1EA;
 
   --font-serif: "Playfair Display", Georgia, serif;
   --font-sans: "Montserrat", sans-serif;
 }
 
-@utility focus-input-neon {
+@utility focus-input-gold {
   &:focus {
-    border-color: var(--color-avant-gold);
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.15);
+    border-color: var(--color-luxury-gold);
   }
 }
 
 @layer base {
-  body {
-    background-color: var(--color-avant-dark);
-    color: #FFFFFF;
-  }
   input, textarea {
-    @apply border border-neutral-800 bg-avant-surface text-white px-4 py-3 text-sm transition-all duration-300 w-full focus:outline-none rounded-none;
+    @apply border border-neutral-300 bg-white px-4 py-3 text-sm transition-colors duration-300 w-full focus:outline-none;
   }
+  
+  /* Apply our custom focus behavior safely */
   input, textarea {
-    @extend .focus-input-neon;
+    @extend .focus-input-gold;
   }
 }
 
-/* Custom Editorial Scrollbars */
+/* Custom Elegant Scrollbars */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0A0A0C;
+  background: #111111;
 }
 ::-webkit-scrollbar-thumb {
-  background: #FFD700;
+  background: #D4AF37;
 }
