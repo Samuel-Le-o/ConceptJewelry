@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-luxury-gold: #D4AF37;
+  --color-luxury-gold-dark: #AA7C11;
+  --color-luxury-onyx: #111111;
+  --color-luxury-coal: #1A1A1A;
+  --color-luxury-alabaster: #FAFAFA;
+  --color-luxury-cream: #F4F1EA;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Montserrat", sans-serif;
+}
+
+@utility focus-input-gold {
+  &:focus {
+    border-color: var(--color-luxury-gold);
+  }
+}
+
+@layer base {
+  input, textarea {
+    @apply border border-neutral-300 bg-white px-4 py-3 text-sm transition-colors duration-300 w-full focus:outline-none;
+  }
+  
+  /* Apply our custom focus behavior safely */
+  input, textarea {
+    @extend .focus-input-gold;
+  }
+}
+
+/* Custom Elegant Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+}
